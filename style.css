@@ -451,12 +451,16 @@ h6{
 footer{
     padding: 5% 10%;
 }
+.first p{
+    margin-left: 0;
+}
 
 .footer-items{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     /* align-items:center; */
     gap: 24px;
+    margin-left: 10%;
     
     
 }
@@ -471,6 +475,12 @@ footer ul li{
 hr{
   color: #d21212fe;
    
+}
+#copy-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
