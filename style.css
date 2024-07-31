@@ -22,15 +22,8 @@
 
 
 
-/* .sevillana-regular {
-    font-family: "Sevillana", cursive;
-    font-weight: 400;
-    font-style: normal;
-  } */
-  
-  
-  
-  
+
+
 
 body{
     background-color: #191818;
@@ -49,11 +42,15 @@ li{
 /* header section */
 
 header{
-    padding: 5% 10% 0% 10%;
-    
+    margin: 5%  10% 0% 10%;
+    background-image: url(./images/Images\ 2.png) ;
+    background-repeat: no-repeat;
+    /* background-size: 360px 83%; */
+    background-position: right bottom ;
+    background-position-x: 90%;
+
     
 
-   
 }
 .logo{
     color: rgb(255, 98, 0);
@@ -84,24 +81,24 @@ header{
     align-items: center;
 }
 /* banner */
-.banner{
-    background-image: url(./images/Images\ 2.png);
-    background-repeat: no-repeat;
-    background-position: 90% 100%;
-    
-    height: 600px;
-    width: 100%;
-    
-    
-}
+
 .banner{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     justify-content: space-between;
+    align-items: end;
+    width: 100%;
+    height: 100%;
     gap: 30px;
+    margin-top: 15%;
 }
 .btn{
     display: flex;
+}
+
+.banner .description{
+    width: 100%;
+    height: 100%;
 }
 .banner .description h1,p{
     margin-bottom: 30px;
@@ -109,7 +106,7 @@ header{
 .banner .description , .notification{
     margin-top: 87px;
     /* width: 50%; */
-    
+
     /* position: absolute; */
 }
 .description > h1{
@@ -121,7 +118,7 @@ header{
 p{
     color: rgba(250, 235, 215, 0.47);
 }
-    
+
 
 .btn-primary{
     color: aliceblue;
@@ -140,56 +137,64 @@ p{
     padding: 15px 40px;
     cursor: pointer;
 }
+.notification{
+    height: 100%;
+}
 .notification-card{
-    width: 200px;
-    height: 75px;
-    
+    width: 150px;
+    height: 60px;
+
     border: 1px solid rgba(255, 255, 255, 0.345);
     border-radius: 1rem;
-    padding: 10px 20px;
+    padding: 0px 20px;
     background-color: rgba(176, 171, 171, 0.226);
 }
 .notification-card h1{
     color: aliceblue;
-    margin-left: 20px;
-    
+    margin-left: 10px;
+
 }
 #card-1{
-    margin-left: 53%;
-    margin-top: 0;
+    margin-top: 20px;
+    position: right top;
+    margin-left: 63%;
     padding: 10px;
+    font-size: small;
 }
 .card-1-description{
     margin: 0;
     padding: 0;
-    margin-top: 4%;
-    margin-left: 10px;
+    
 }
 #card-2{
-    margin-top: 47%;
-    margin-left: 10%;
+    margin-top: 49%;
+    padding-bottom:0% ;
+    margin-left: 3rem;
     padding: 10px;
 }
 
 .card-2-description{
-    /* margin-top: 10px; */
-   margin-top: 10%;
+    margin-top: 24px;
+  
+}
+.card-2-description >p{
+    width: 100%;
 }
 .card-2-description h2 ,p{
     position: relative;
     padding: 0;
     margin: 0;
     margin-left: 10px;
-    
-    
+
+
 }
 .video{
    font-size: xx-large;
    color: rgb(219, 65, 18);
-  
-   
 
-    
+
+
+
 }
 span{
     font-style: italic;
@@ -200,15 +205,14 @@ span{
 main{
     background-color: #050505;
     margin: 0;
-    margin-top: -90px;
     padding-bottom: 50px;
-    
-    
+
+
 }
 .habits{
-    margin: 5% 10%;
+    margin: 0% 10%;
     padding-top:50px ;
-    
+
 }
 .habits h1,p{
     margin-bottom: 24px;
@@ -249,9 +253,9 @@ main{
     border: 2px solid rgb(35, 37, 37);
     border-radius: 50%;
     margin-bottom: 24px;
-    
-    
-    
+
+
+
 }
 
 
@@ -266,7 +270,7 @@ main{
     gap: 30px;
     width: auto;
     height: 400px;
-    
+
 
 }
 .join-now img {
@@ -291,7 +295,7 @@ main{
 .training-style{
     display: grid;
     grid-template-columns: repeat(3, 1fr) ;
-    
+
 }
 .training-style img{
     width: 100%;
@@ -326,6 +330,7 @@ td{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 24px;
     /* gap: 100px; */
 }
 .bmi-calculator{
@@ -343,7 +348,7 @@ td{
     justify-content: space-between;
     gap: 100%;
     gap: 10px;
-    
+
 }
 .input{
     background-color: rgba(87, 78, 68, 0.669);
@@ -353,7 +358,7 @@ td{
     border-style: none;
     border-radius: .5rem;
     margin-bottom: 20px;
-    
+
 }
 select >option{
     color: #060505;
@@ -361,10 +366,14 @@ select >option{
 
 /* team section */
 .team-title{
-    margin-top: 50px;
+    margin-top:  50px;
+
 }
 .team-title > h1{
     margin-bottom: 20px;
+}
+.team-title .p{
+    
 }
 
 .our-team{
@@ -375,8 +384,8 @@ select >option{
     background-color: rgba(44, 41, 38, 0.674);
     padding: 24px;
     border-radius: .5rem;
-    
-    
+
+
 
 }
 .team-card{
@@ -391,7 +400,7 @@ select >option{
 .team-card h3, h6{
     display: flex;
     justify-content: flex-start;
-    
+
 }
 h6{
     color: rgba(86, 80, 72, 0.959);
@@ -404,7 +413,7 @@ h6{
     background-image: url(./images/trainer1.png);
     background-repeat: no-repeat;
     background-size:100% 300px;
-    
+
 }
 .trainer-2{
     background-image: url(./images/trainer2.png);
@@ -420,30 +429,19 @@ h6{
     background-image: url(./images/trainer4.png);
     background-repeat: no-repeat;
     background-size:100% 300px;
-    
+
 }
 .trainer-5{
     background-image: url(./images/trainer5.png);
     background-repeat: no-repeat;
     background-size:100% 300px;
-    
+
 }
 .trainer-6{
     background-image: url(./images/trainer6.png);
     background-repeat: no-repeat;
     background-size:100% 300px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* footer section */
@@ -458,11 +456,13 @@ footer{
 .footer-items{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+
+
     /* align-items:center; */
-    gap: 24px;
-    margin-left: 10%;
-    
-    
+    gap: 2rem;
+
+
+
 }
 footer h1 ,h2{
     margin-bottom: 40px;
@@ -474,7 +474,7 @@ footer ul li{
 }
 hr{
   color: #d21212fe;
-   
+
 }
 #copy-right{
     display: flex;
@@ -488,6 +488,12 @@ hr{
 
 /* small device */
 @media screen and (max-width:576px) {
+    /* header section */
+    header{
+        background-image: none;
+        
+    }
+    
     #menu-icon{
         display: block;
         color: aliceblue;
@@ -499,15 +505,13 @@ hr{
         display: none;
     }
 
-    .bmi-title h2{
-        margin-left: 0;
-    }
+   
 
     .banner {
         grid-template-columns: repeat(1,1fr);
-        background-image: none;
-        width: 100%;  
-       
+        margin-bottom: 0;
+        width: 100%;
+
     }
     .banner .btn{
         display: flex;
@@ -515,9 +519,9 @@ hr{
         margin-top: 24px;
 
     }
-   
-    
-    
+
+
+
     #small{
         padding: 10px;
         margin-right: 20px;
@@ -527,22 +531,23 @@ hr{
     }
     .notification{
         background-image: url(./images/Images\ 2.png);
-        
+
         background-size: contain;
         background-repeat: no-repeat;
         height: 100%;
         width: 100%;
-        
-        
-       
+
+
+
     }
     #card-1{
-      
+
         width: 130px;
         height: 70px;
         font-size: smaller;
         margin-right: 30%;
         margin-top: 10%;
+        margin-left: 50%;
     }
     #card-1 h1,p{
         margin: 5px;
@@ -558,31 +563,36 @@ hr{
     #card-2 h2 ,p{
         margin: 5px;
     }
+    /* main section */
+    main{
+        margin-top:-610px;
+        width: 100%;
+        height: 100%;
+    }
+    
+    /* hebit section */
 
     .habits{
         position: relative;
         margin-top: 603px;
     }
-    
-    
 
-    
-    
+
     .habits .cards ,
-    
+
     .join-now,
     .training-style,
     .footer-items, .our-team{
         grid-template-columns: repeat(1,1fr);
-        
+
     }
     .card{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         justify-items: center;
     }
-    
-    
+
+
     .join-now{
         height: 100%;
         padding: 24px;
@@ -599,10 +609,14 @@ hr{
     /* bmi calculator */
     .section-bmi{
         flex-direction: column;
-        
+
     }
+    /* bmi section */
     .bmi-calculator{
         width: 100%;
+    }
+    .bmi-title h2{
+        margin-left: 0;
     }
 
     /* team section */
@@ -620,20 +634,20 @@ hr{
         width: 100%;
         padding: 0;
         margin: 0;
-        
+
     }
     .footer-items{
-        
+
         padding:10% ;
-       
+
     }
     .footer-items p{
         margin-right: 24px;
     }
-    
-    
-    
 
-    
+
+
+
+
 
 }
