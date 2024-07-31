@@ -292,6 +292,10 @@ main{
     margin: 0% 10%;
 }
 
+.training-p{
+    margin-left: 0;
+}
+
 .training-style{
     display: grid;
     grid-template-columns: repeat(3, 1fr) ;
@@ -303,11 +307,13 @@ main{
 }
 
 .bmi-title{
-margin: 5% 10%;
+height: 100%;
+width: 100%;
+margin-top: 50px;
 
 }
-.bmi-title h2{
-    margin-left: 16%;
+.bmi-title h2 ,p{
+    margin-left: 10%;
 }
 .section-bmi{
     padding: 5% 10%;
@@ -615,9 +621,14 @@ hr{
     .bmi-calculator{
         width: 100%;
     }
-    .bmi-title h2{
+    .bmi-calculator h2,p{
         margin-left: 0;
     }
+
+    .bmi-title h2,p{
+        margin-left: 10%;
+    }
+    
 
     /* team section */
     .our-team{
