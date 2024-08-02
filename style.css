@@ -7,22 +7,15 @@
 /* // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 100 to 900 */
 
-.inter-font {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
-}
 
 
-
-@import url('https://fonts.googleapis.com/css2?family=Meie+Script&family=Sevillana&display=swap');
-
-
-
-
+.great-vibes-regular {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    /* font-size: 84px; */
+    color: aliceblue;
+  }
 
 
 body{
@@ -92,8 +85,13 @@ header{
     gap: 30px;
     margin-top: 15%;
 }
+
+
 .btn{
     display: flex;
+}
+.banner .description >h1{
+    width: 400px;
 }
 
 .banner .description{
@@ -312,7 +310,10 @@ width: 100%;
 margin-top: 50px;
 
 }
-.bmi-title h2 ,p{
+.bmi-title> h2{
+    margin-left: 10%;
+}
+.bmi-title> p{
     margin-left: 10%;
 }
 .section-bmi{
@@ -511,7 +512,9 @@ hr{
         display: none;
     }
 
-   
+    .banner .description >h1{
+        width: 100%;
+    }
 
     .banner {
         grid-template-columns: repeat(1,1fr);
@@ -615,6 +618,7 @@ hr{
     /* bmi calculator */
     .section-bmi{
         flex-direction: column;
+        align-items: flex-start;
 
     }
     /* bmi section */
@@ -625,9 +629,13 @@ hr{
         margin-left: 0;
     }
 
-    .bmi-title h2,p{
+    .bmi-title>h2{
         margin-left: 10%;
     }
+    .bmi-title >p{
+        margin-left: 10%;
+    }
+    
     
 
     /* team section */
