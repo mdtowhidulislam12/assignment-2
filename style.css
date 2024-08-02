@@ -631,7 +631,7 @@ hr{
     .bmi-calculator{
         width: 100%;
     }
-    .bmi-calculator h2,p{
+    .bmi-calculator h2{
         margin-left: 0;
     }
 
@@ -651,6 +651,10 @@ hr{
     }
     .team-title{
         margin: 10%;
+    }
+    #team-p{
+        margin-left: 10%;
+        width: 300px;
     }
 
     /* footer */
